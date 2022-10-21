@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+<!-- In order to preview the glb model, visit : https://modelviewer.dev/editor/
+				exposure="2"
+				-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Wilkins Avenue</title>
+
+	</head>
+
+	<body>
+			<model-viewer
+				bounds="tight"
+				style="display: flex; height:1100px; width:1100px;"
+				src="./assets/ARnative_androidV7.glb"
+				environment-image="./assets/001_studioHDRI.hdr"
+				ios-src="./assets/ARnative_iosV6b.usdz"
+				autoplay
+				poster="./assets/thumbnailAR.jpg"
+				camera-orbit="0rad 0rad auto"
+				shadow-intensity="0"
+				shadow-softness="0"
+				ar
+				ar-modes="webxr scene-viewer quick-look fallback"
+				camera-controls
+				alt="Wilkins Avenue AR's Demonstration Native AR project.">	
+			<img class="fit-picture"
+				style="margin-top: 70%; margin-left: 25%"
+     			src="./assets/OPEN.png"
+				 slot="ar-button">
+		
+	</body>
+
+</html>
